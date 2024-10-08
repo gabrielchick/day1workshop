@@ -1,0 +1,54 @@
+final = immutable
+git helps control code and versions
+
+after git init, any file will be included inside the working directory git init
+
+when in doubt, run git status to check
+
+do not want to save anything compiled from the source in git (NOTE: EVERYTHING IS PERMANENT)
+e.g. classes, dont include any directory called classes or files ending with .classes
+e.g. temp files, api keys, passwords, git hub will disable stuff we commit with passwords
+
+
+
+
+
+
+git overview:
+working directory (red) -> staging area (green) -> repository
+
+if modified something in staging area, it goes back to the WD
+git add. git add . to move files from wd to staging
+git commit -m "initial commit"  to commit, this moves from staging area to repository (permanent)
+:q! to exit the VI if we forget the -m
+
+git push: 
+
+clean means the files in WD, staging, respository are all the same
+
+git log shows Author: name <email>  Date: day date time
+
+rmdir /s /q .git removes a git repository in the repository's root directory
+
+
+
+
+GIT
+git add -> git commit -> git push (wd ->s, s -> lr, lr -> GitHub)'
+
+
+gabrielchick<githublink>.git
+gabrielchick@github.com/gabrielchick/day-2-workshop.git  -> do like this then no need name, just need password
+https://github.com/gabrielchick/day-2-workshop.git
+
+
+
+git remote add origin https://github.com/gabrielchick/day-2-workshop.git
+git remote -v  -> <output will show origin>
+
+git pull origin 6C
+git branch (starts from master, can branch out into "multiverse")
+git push origin master
+
+if any mistake, use git remote remove origin
+git remote --help    -> for help
